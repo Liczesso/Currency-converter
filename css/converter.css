@@ -1,0 +1,55 @@
+html {
+    box-sizing: border-box;
+}
+*, ::after, ::before {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Lato';
+    background-color: #ddd;
+}
+
+.form {
+    max-width: 500px;
+margin: 3% auto;
+padding: 20px;
+}
+
+.form__button {
+    margin: 20px 2px;
+    background-color: goldenrod;
+    color: #fff;
+    padding: 5px;
+}
+
+.form__button:hover {
+    background-color: rgba(218, 165, 32, 0.8);
+}
+
+.form__button:active {
+    background-color: rgba(218, 165, 32, 0.6);
+}
+
+.form__data {
+    border: 4px double steelblue;
+    border-radius: 10px;
+}
+
+.form__cell {
+    padding: 5px;
+}
+
+.form__cell:focus {
+    background-color: #7fb6e392;
+}
+
+.form__legend {
+    background-color: goldenrod;
+    color: #fff;
+    padding: 5px;
+}
+
+.form__summary {
+    text-align: center;
+}
