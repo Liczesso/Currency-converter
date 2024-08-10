@@ -1,1 +1,1 @@
-[Podgląd strony] (https://liczesso.github.io/Currency-converter/)
+[Podgląd strony](https://liczesso.github.io/Currency-converter)
