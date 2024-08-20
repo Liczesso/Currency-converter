@@ -17,35 +17,37 @@
         rel="stylesheet">
 </head>
 
-<body>
+<body class="body_background">
+
     <form class="form js-form">
         <fieldset class="form__data">
             <legend class="form__legend">Kalkulator walutowy</legend>
             <p>
                 <label>
-                    <input class="form__cell js-form__amount" type="number" name="kwota" step="any" min=0 max=999999999 placeholder="Podaj kwotę"
-                        required> </label>
+                    <input class="form__cell js-form__amount" type="number" name="kwota" step="any" min=0 max=999999999
+                        placeholder="Podaj kwotę (zł)" required> </label>
             </p>
             <label>
                 Docelowa waluta:
                 <select class="js-form__currency" name=”groupName” size=”X”>
-                    <option value=USD>USD</option>
-                    <option value=EUR>EUR</option>
-                    <option value=PLN selected>PLN</option>
-                    <option value=CHF>CHF</option>
-                    <option value=GBP>GBP</option>
+                    <option selected>-</option>
+                    <option>USD</option>
+                    <option>EUR</option>
+                    <option>CHF</option>
+                    <option>GBP</option>
                 </select>
             </label>
             <p>
                 <label>
-                    <input class="form__cell js-form__rate" type="number" name="kurs" placeholder="Aktualny kurs" step="any" min="0" max="10"
-                        required>
+                    <input class="form__cell js-form__rate" type="number" name="kurs" placeholder="Aktualny kurs"
+                        step="any" min="0" max="10" required>
                 </label>
             </p>
+            <button class="form__button">Przelicz</button>
+            <p class="form__summary"> Otrzymasz: <strong class="js-form__result">N/A</strong></p>
         </fieldset>
-        <button class="form__button">Przelicz</button>
+
     </form>
-    <p class="form__summary"> Otrzymasz: <strong class="js-form__result">N/A</strong></p>
     <script defer src="js/converter.js"></script>
 </body>
 

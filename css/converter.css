@@ -1,19 +1,21 @@
 html {
     box-sizing: border-box;
 }
+
 *, ::after, ::before {
     box-sizing: inherit;
 }
 
 body {
     font-family: 'Lato';
-    background-color: #ddd;
+    background-color: #141a2a;
+    color: #fff;
 }
 
 .form {
     max-width: 500px;
-margin: 3% auto;
-padding: 20px;
+    margin: 3% auto;
+    padding: 20px;
 }
 
 .form__button {
@@ -34,6 +36,7 @@ padding: 20px;
 .form__data {
     border: 4px double steelblue;
     border-radius: 10px;
+    background-color: #141a2ac8;
 }
 
 .form__cell {
@@ -41,7 +44,7 @@ padding: 20px;
 }
 
 .form__cell:focus {
-    background-color: #7fb6e392;
+    background-color: #7fb6e3ff;
 }
 
 .form__legend {
@@ -52,4 +55,13 @@ padding: 20px;
 
 .form__summary {
     text-align: center;
+}
+
+.body_background {
+    background-image: url("../images/background.png");
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    background-repeat: no-repeat;
+    background-position: center top;
 }
