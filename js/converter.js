@@ -1,8 +1,8 @@
 {
-  const rateElement = document.querySelector(".js-form__rate");
-  const currencyElement = document.querySelector(".js-form__currency");
 
   const enterTheRate = () => {
+    const rateElement = document.querySelector(".js-form__rate");
+    const currencyElement = document.querySelector(".js-form__currency");
 
     switch (currencyElement.value) {
       case 'USD':
@@ -27,6 +27,8 @@
   const onFormSubmit = (event) => {
     event.preventDefault();
 
+    const rateElement = document.querySelector(".js-form__rate");
+    const currencyElement = document.querySelector(".js-form__currency");
     const amountElement = document.querySelector(".js-form__amount");
 
     const amount = amountElement.value;
@@ -46,6 +48,7 @@
 
 
   const init = () => {
+    const currencyElement = document.querySelector(".js-form__currency");
     currencyElement.addEventListener("change", enterTheRate);
 
     const formElement = document.querySelector(".js-form");
